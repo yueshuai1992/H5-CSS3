@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+.regular-checkbox {
+	display: none;
+}
+/*打开页面显示的框的背景*/
+.regular-checkbox + label {
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+/*默认图标的背景*/
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+/*改变后框内的背景颜色*/
+.regular-checkbox:checked + label {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+/*对勾颜色*/
+.regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+}
+
+/*框的大小*/
+.big-checkbox + label {
+	padding: 18px;
+	/*margin-top: 100px;*/
+}
+/*对勾大小位置*/
+.big-checkbox:checked + label:after {
+	font-size: 28px;
+	left: 6px;
+}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="tag">Checkbox Big</div>
+		<input type="checkbox" id="checkbox-2-1" class="regular-checkbox big-checkbox" /><label for="checkbox-2-1"></label><br />
+		<input type="checkbox" id="checkbox-2-2" class="regular-checkbox big-checkbox" /><label for="checkbox-2-2"></label><br />
+		<input type="checkbox" id="checkbox-2-3" class="regular-checkbox big-checkbox" /><label for="checkbox-2-3"></label><br />
+		<input type="checkbox" id="checkbox-2-4" class="regular-checkbox big-checkbox" /><label for="checkbox-2-4"></label><br />
+		<input type="checkbox" id="checkbox-2-5" class="regular-checkbox big-checkbox" /><label for="checkbox-2-5"></label><br />
+	</div>
+</body>
+</html>

@@ -1,0 +1,304 @@
+*{
+	margin:0;
+	padding: 0;
+}
+@font-face{
+	font-family: Arial;
+	src:url(font/arial.ttf);
+}
+@font-face{
+	font-family: Impact;
+	src:url(font/impact.ttf);
+}
+html body {
+	font-family: "Arial";
+	font-size: 10px;
+}
+.clearfix:before , .clearfix:after{
+	display:block;
+	content: "";
+}
+.clearfix:after{
+	clear:both;
+}
+.wrap{
+	width:96%;
+	margin:0 auto;
+}
+.header{
+	/*width:1020px;*/
+	width:100%;
+	/*height:180px;*/
+	margin: 0 auto;
+}
+.header .top{
+	height: 43px;
+	background:url(img/shanjiaoTOP.jpg) repeat center;
+}
+.contain{
+	/*height:96px;*/
+	width:100%;
+	margin-left:1%;
+	line-height: 110px;
+	font-size:3.4rem;
+	font-family:"Impact";
+}
+.contain span{
+	text-shadow:1px 1px 0px #d9d7d8;
+}
+.contain .nt{
+	color:#eeedeb;
+}
+.applistbtn{
+	float: right;
+	margin-right:15px;
+	margin-top: 30px;
+	cursor: pointer;
+	width:50px;
+	height: auto;
+}
+nav{
+	width:100%;
+	/*margin-left: 30px;*/
+	height: 43px;
+	background: url(img/nav-backgrund.jpg) repeat center;
+}
+nav li {
+	list-style: none;
+	float: left;
+	font-family: "Impact";
+	font-size: 2.3em;
+	line-height: 43px;
+}
+nav .list1{
+	margin-left:1%;
+	margin-right:13%;
+	color:#ff0207;
+}
+nav .list2{
+	margin-right:11%;
+}
+nav .list3{
+	margin-right:12%;
+	color:#ff0207;
+}
+nav .list4{
+	margin-right:13%;
+}
+nav .list5{
+	margin-right:14%;
+	color:#ff0207;
+}
+.applist{
+	width:60%;
+	position: absolute;
+	top:20%;
+	left: 20%;
+	background-color: #f4e3a9;
+	opacity:0.9;
+	border-radius: 10px;
+	box-shadow: 1px 1px 12px #d3c07e;
+
+}
+
+.applist li{
+	list-style: none;
+	font-family: "Impact";
+	text-align: center;
+	font-size: 1.3em;
+	line-height: 30px;
+	display: none;
+}
+.applist li a{
+	text-decoration: none;
+	color:#000;
+}
+.applist li:nth-child(odd) a{
+	color:red;
+}
+.main {
+	/*height: 615px;*/
+	/*width:1020px;*/
+	width:100%;
+	margin:0 auto;
+	clear:both;
+}
+.main .top{
+	margin-left:2%;
+	margin-top: 1%;
+	/*width:941px;*/
+	width:96%;
+	height: 4px;
+	border-top: 1px solid  #d5d5d5;
+	border-bottom: 1px solid  #d5d5d5;
+}
+.main .left{
+	/*width:283px;*/
+	/*height: 588px;*/
+	padding-top:20px;
+	width:28%;
+	float: right;
+
+}
+.main .inner{
+	width:95%;
+
+	/*height: 560px;*/
+	box-shadow: 5px 5px 8px #6e6e6e;
+	background:url(img/未标题-2.jpg);
+	padding-bottom:36px;
+	padding-top:12px;
+}
+
+figure{
+	/*width:218px;*/
+	width:90.833%;
+	margin:0 auto;
+}
+figcaption{
+	clear: both;
+	margin:0 auto;
+}
+figcaption li{
+	list-style: none;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+figcaption a{
+	/*width:100%;*/
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	display: block;
+	color:#696768;
+	border-radius: 10px;
+	background:#cbcbcb;
+	border:1px solid #9f9d9e;
+	text-align: center;
+	margin-top:15%;
+	margin-bottom: 15%;
+	font-family: "Impact";
+}
+figcaption li{
+	float: left;
+	width:40%;
+	text-align: center;
+}
+figcaption img{
+	max-width: 100%
+}
+.inner p {
+	font-family: "Impact";
+	font-size: 2.3em;
+	margin-top: 5%;
+	margin-left: 9%;
+	margin-bottom: 5%;
+}
+.mid{
+	float:left;
+	/*200/960*/
+	/*width:23%;*/
+	width:35%;
+	margin-top: 3%;
+	margin-left: 4%;
+	margin-right:4%;
+	text-align: center;
+}
+.mid img{
+	max-width:100%;
+}
+.main .right{
+	width:72%;
+	float: right;
+
+}
+.main .right .text1{
+	font-family: "Impact";
+	font-size: 7em;
+	margin-top: 8%;
+	text-shadow:2px 2px #dbd7d6;
+}
+.main .right .text2{
+	font-family: "Arial";
+	font-size: 4em;
+	color: #979596;
+	margin-top: 4%;
+}
+.main .right .text3{
+	font-family: "Arial";
+	font-size: 2rem;
+	color: #979596;
+	margin-top: 4%;
+	line-height: 40px;
+}
+.main .right .text3 span{
+	font-family: "Arial";
+	font-size: 2rem;
+	color: #979596;
+	/*margin-top:10px;*/
+}
+.main .right .redbutton{
+	width: 45%;
+	float: left;
+	margin-top: 3%;
+	border-radius: 10px;
+	background:url(img/redbutton.jpg) repeat-x center;
+	background-size:40px;
+	font-family: "Impact";
+	font-size: 2.8em;
+	text-align: center;
+	line-height:3em;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: 4px 4px 4px #a6a6a6;
+}
+.main .right .redbutton span{
+	margin-left: 5%;
+	font-family: "Arial";
+}
+footer{
+	width:100%;
+	margin:0 auto;
+}
+footer .top{
+	margin-top: 1%;
+	margin-left:2%;
+	/*width:941px;*/
+	width:96%;
+	height: 4px;
+	border-top: 1px solid  #d5d5d5;
+	border-bottom: 1px solid  #d5d5d5;
+}
+footer p{
+	height: 80px;
+	line-height: 80px;
+	font-family: "Arial";
+	text-align: center;
+	font-size:1.2rem;
+	color: #747474;
+}
+.footer{
+	height:41px;
+	background: url(img/shanjiaobottom.jpg) repeat center ;
+}
+@media screen and (min-width:320px) and (max-width: 768px){
+	.main .left,.main .right{width:100%}
+}
+@media screen and (min-width: 320px) and (max-width: 360px){
+	.contain  {font-size:1.5rem; }
+	.main .right .text1{font-size: 4em}
+	.main .right .text2{font-size: 1.5em}
+	.main .right .text3{font-size: 1.2em;line-height: 20px;}
+	.main .right .text3 span{font-size: 1.2em}
+	.main .right .redbutton{line-height:1em;font-size: 1.2rem;clear:both;width:96%;line-height: 2em;}
+	footer p{font-size:1.0rem;line-height: 1rem}
+}
+@media screen and (min-width: 360px) and (max-width: 500px){
+	.contain {font-size: 1.6rem;}
+	.main .right .text1{font-size: 4em}
+	.main .right .text2{font-size: 1.5em}
+	.main .right .text3{font-size: 1.2rem;line-height: 20px;}
+	.main .right .text3 span{font-size: 1rem}
+	.main .right .redbutton{line-height:1em;font-size: 1.2rem;clear:both;width:96%;line-height: 2em;}
+	footer p{font-size:1.0rem;line-height: 1rem}
+}

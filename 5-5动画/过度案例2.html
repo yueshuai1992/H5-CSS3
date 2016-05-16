@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+		body{
+			background:#000;
+		}
+		.box{
+			margin:0 auto;
+			width:80%;
+			font-family: "微软雅黑";
+			background:#d3e399;
+			border-radius: 10px;
+		}
+		.box li {
+			height:50px;
+			overflow: hidden;
+			float: left;
+			list-style: none;
+		}
+
+		.box div{
+			transition:transform 1s ;
+		}
+		.box div:hover{
+			transform: translate(0px,-50px);
+			-ms-transform: translate(0px,-50px);		/* IE 9 */
+			-webkit-transform: translate(0px,-50px);	/* Safari and Chrome */
+			-o-transform: translate(0px,-50px);		/* Opera */
+			-moz-transform: translate(0px,-50px);		/* Firefox */
+		}
+		.box span{
+			display: block;
+			padding:15px 0px;
+
+			text-align: center;
+			color: #fff;
+			background:url("background.jpg") repeat;
+		}
+		.box p{
+			padding:15px 10px;
+			color: #000;
+			background: #fff;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="box">
+
+		<ul>
+			<li>
+			<div><span>HOME</span><p>HOME</p></div></li>
+			<li><div><span>DIGITALCITY</span><p>DIGITALCITY</p></div></li>
+			<li><div><span>PORTFIFL</span><p>PORTFIFL</p></div></li>
+			<li><div><span>BLOG</span><p>BLOG</p></div></li>
+			<li><div><span>CONTACT</span><p>CONTACT</p></div></li>
+		</ul>
+	</div>
+</body>
+</html>

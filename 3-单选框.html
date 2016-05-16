@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>单选框</title>
+	<style type="text/css">
+		.regular-radio {
+			display: none;
+
+		}
+		.regular-radio + label {
+			-webkit-appearance: none;
+			border: 1px solid #cacece;
+			padding: 7px;
+			border-radius: 50%;
+			display: inline-block;
+			position: relative;
+			margin-top: 100px;
+
+		}
+		.regular-radio:checked + label:after {
+			content: ' ';
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			position: absolute;
+			top: 7px;
+			background: #50bbdb;
+			left: 7px;
+		}
+		.big-radio + label {
+			padding: 14px;
+
+		}
+
+		.big-radio:checked + label:after {
+			width: 14px;
+			height: 14px;
+			left: 7px;
+			top: 7px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="button-holder">
+		<input type="radio" id="radio-2-1" name="radio-2-set" class="regular-radio big-radio" checked /><label for="radio-2-1"></label><br />
+		<input type="radio" id="radio-2-2" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-2"></label><br />
+		<input type="radio" id="radio-2-3" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-3"></label><br />
+
+	</div>
+</body>
+</html>

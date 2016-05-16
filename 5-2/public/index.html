@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<div  class="wrap">
+		<div class="header">
+		<div class="top">
+
+		</div>
+		<div class="contain">
+			<span>AND THE WINNER IS</span><span class="nt">N'T...</span>
+			<img class="applistbtn" src="img/anniu.png" alt="" >
+		</div>
+		<nav class="weblist">
+			<ul>
+				<li class="list1">WHY?</li>
+				<li class="list2">SYNOPSIS</li>
+				<li class="list3">STILLS/PHOTOS</li>
+				<li class="list4">VIDEOS/CLIPS</li>
+				<li class="list5">QUOTES</li>
+				<li class="list6">QUIZ</li>
+			</ul>
+
+		</nav>
+		<div class="applist">
+			<ul >
+				<li class="list1"><a href="">WHY?</a></li>
+				<li class="list2"><a href="">SYNOPSIS</a></li>
+				<li class="list3"><a href="">STILLS/PHOTOS</a></li>
+				<li class="list4"><a href="">VIDEOS/CLIPS</a></li>
+				<li class="list5"><a href="">QUOTES</a></li>
+				<li class="list6"><a href="">QUIZ</a></li>
+			</ul>
+		</div>
+
+		</div>
+		<div class="main clearfix">
+			<div class="top clearfix">
+			</div>
+
+
+			<div class="right">
+				<div class="mid">
+					<img src="img/jingren.png" alt="">
+				</div>
+				<p class="text1">EVERY YEAR</p>
+				<p class="text2">WHENI I WATCH THE <br> OSCARS I'M ANNOYED...</p>
+				<p class="text3"> that films like <span>King Kong,Moulin Rouge</span> and <span> Munich </span>get the statue  whilst the real cinematic heroes lose out.Not very Hollywood is it?  We're here to put things right.
+				</p>
+				<p class="redbutton">THESE SHOULD HAVE WON <span> >> </span></p>
+			</div>
+
+			<div class="left">
+				<div class="inner">
+					<p class="textTop">UNSUNG HEROES...</p>
+					<figure class="clearfix">
+						<figcaption >
+							<li>
+								<img src="img/1.jpg" alt="">
+								<a href="#">full info</a>
+							</li>
+							<li>
+								<img class="pic2" src="img/2.jpg" alt="" >
+								<a href="#">full info</a>
+							</li>
+
+						</figcaption>
+					</figure>
+
+					<p class="textmid">OVERHYPEO NONSENSE...</p>
+					<figure class="clearfix">
+						<figcaption >
+							<li>
+								<img src="img/3.jpg" alt="">
+								<a href="#">full info</a>
+							</li>
+							<li>
+								<img class="pic2" src="img/4.jpg" alt="" >
+								<a href="#">full info</a>
+							</li>
+						</figcaption>
+					</figure>
+				</div>
+
+
+			</div>
+		</div>
+		<footer >
+			<div class="top clearfix"></div>
+			<p>NOTE:OUR OPINION IS ABSOLUTELY CORRECT.YOU ARE WRONG,EVEN IF YOU THINK YOU ARE RIGHT.THAT'S A FACT.DEALWITHIT.</p>
+			<div class="footer">
+
+			</div>
+		</footer>
+	</div>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$(window).load(function() {
+			var x = $(window).innerWidth();
+			if(x>=500){
+				$(".weblist").css("display","block")
+				$(".applist").css("display","none")
+				$(".applistbtn").css("display","none")
+			}
+			else{
+				$(".weblist").css("display","none")
+				$(".applist").css("display","block")
+				$(".applistbtn").css("display","block")
+			}
+			var click = 1;
+
+			$(".applist").hide();
+			$(".applistbtn").click(function(){
+				if(click==1){
+					$(".applist li").css("display","block")
+					$(".applist").slideDown("slow");
+					click=0;
+				}else{
+					$(".applist").slideUp("slow");
+					click=1;
+				}
+			})
+
+		})
+	</script>
+</body>
+</html>

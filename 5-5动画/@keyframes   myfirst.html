@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{
+			width:300px;
+			height: 300px;
+			position:relative; /* 要想动起来必须position*/
+			-webkit-animation:  myfirst 5s;
+			-o-animation: myfirst 5s;
+			animation: myfirst 5s;
+			: red;
+		}
+		@keyframes myfirst{
+			/*from{background: red;}
+			to{background: yellow}*/
+
+
+			/*0%   {background:red;}
+			25%  {background:yellow;}
+			50%  {background:blue;}
+			100% {background:green;}*/
+
+			0%   {background:red; left:0px; top:0px;}
+			25%  {background:yellow; left:200px; top:0px;}
+			50%  {background:blue; left:200px; top:200px;}
+			75%  {background:green; left:0px; top:200px;}
+			100% {background:red; left:0px; top:0px;}
+		}
+		@-webkit-keyframes myfirst{
+		/*	from{background: red;}
+			to{background: yellow}*/
+
+
+
+			/*0%   {background:red;}
+			25%  {background:yellow;}
+			50%  {background:blue;}
+			100% {background:green;}*/
+
+
+			0%   {background:red; left:0px; top:0px;}
+			25%  {background:yellow; left:200px; top:0px;}
+			50%  {background:blue; left:200px; top:200px;}
+			75%  {background:green; left:0px; top:200px;}
+			100% {background:red; left:0px; top:0px;}
+		}
+		@-o-keyframes myfirst{
+			/*from{background: red;}
+			to{background: yellow}*/
+
+
+
+			/*0%   {background:red;}
+			25%  {background:yellow;}
+			50%  {background:blue;}
+			100% {background:green;}*/
+
+			0%   {background:red; left:0px; top:0px;}
+			25%  {background:yellow; left:200px; top:0px;}
+			50%  {background:blue; left:200px; top:200px;}
+			75%  {background:green; left:0px; top:200px;}
+			100% {background:red; left:0px; top:0px;}
+		}
+		@-moz-keyframes myfirst{
+			/*from{background: red;}
+			to{background: yellow}*/
+
+
+			/*0%   {background:red;}
+			25%  {background:yellow;}
+			50%  {background:blue;}
+			100% {background:green;}*/
+
+
+
+			0%   {background:red; left:0px; top:0px;}
+			25%  {background:yellow; left:200px; top:0px;}
+			50%  {background:blue; left:200px; top:200px;}
+			75%  {background:green; left:0px; top:200px;}
+			100% {background:red; left:0px; top:0px;}
+		}
+
+	</style>
+</head>
+<body>
+	<!-- @keyframes -->
+	<div></div>
+</body>
+</html>

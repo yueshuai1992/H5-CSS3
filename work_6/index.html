@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+		.bigbox{
+			width:350px;
+			height:319px;
+			overflow: hidden;
+		}
+		.box1{
+			width:1750px;
+			height:319px;
+	
+		}
+		img{
+			display: block;
+			float:left;
+		}
+		.list1 li{
+			width:20px;
+			height:20px;
+			display: block;
+			float:left;
+			border:1px solid red;
+			text-align: center;
+			line-height: 20px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class ="bigbox">		
+		<div class = "box1">
+			<img class="img1" src="1.jpg" alt="" width=350 height=319>
+			<img class="img2" src="2.jpg" alt="" width=350 height=319>
+			<img class="img3" src="3.jpg" alt="" width=350 height=319>
+			<img class="img4" src="4.jpg" alt="" width=350 height=319>
+			<img class="img5" src="5.jpg" alt="" width=350 height=319>
+		</div>
+	</div>
+	<ul class= "list1">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+	
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+		$(".list1 li").click(function(){
+			var number = $(this).index();
+			var a = (-350)*number;
+			$(".box1").animate({"margin-left":a},"fast");
+			$(this).css("background-color","red");
+			$(this).siblings().css("background-color","#fff");
+		});
+	
+		
+	</script>
+</body>
+</html>
